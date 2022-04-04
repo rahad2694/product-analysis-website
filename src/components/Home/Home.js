@@ -1,8 +1,12 @@
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
+import ShowReview from '../ShowReview/ShowReview';
 
 const Home = () => {
+    const [review, setReview] = useReviews();
     return (
         <div>
             <div className='grid grid-cols-1  my-5 md:flex md:justify-between p-10'>
@@ -21,7 +25,14 @@ const Home = () => {
                     <img className='w-3/4 border-4 p-1 rounded-full' src="../../images/intro.jpg" alt="" />
                 </div>
             </div>
-
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
+                {
+                    review.slice(0, 3).map(item => <ShowReview key={item.id} item={item}></ShowReview>)
+                }
+            </div>
+            <div className='my-5'>
+                <Link className='bg-orange-400 py-2 px-5 rounded-xl hover:text-white my-5' to='/reviews'>See All</Link>
+            </div>
         </div>
     );
 };

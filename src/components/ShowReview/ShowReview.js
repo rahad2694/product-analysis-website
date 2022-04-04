@@ -11,7 +11,7 @@ const ShowReview = (props) => {
                 <img src={image} alt="" />
             </div>
             <h1 className='text-2xl font-bold'>{name}</h1>
-            <p>{rating} <span className='text-amber-400'><FontAwesomeIcon icon={faStar}></FontAwesomeIcon> {(rating%2===0 || rating ===3 || rating ===5)? <></> : <FontAwesomeIcon icon={faStarHalfStroke}></FontAwesomeIcon> }</span></p>
+            <p>Rated: {rating} <span className='text-amber-400'><FontAwesomeIcon icon={faStar}></FontAwesomeIcon> {(rating%2===0 || rating ===3 || rating ===5)? <></> : <FontAwesomeIcon icon={faStarHalfStroke}></FontAwesomeIcon> }</span></p>
             <p>{feedback}</p>
         </div>
     );
