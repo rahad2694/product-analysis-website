@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='bg-orange-400 py-3 grid grid-cols-2 px-2'>
+        <div className='bg-orange-400 py-3 grid grid-cols-2 px-2 sticky top-0'>
             <div className='flex justify-start'>
                 <h1 className='text-3xl font-bold text-white'>BD Cycle Repair <FontAwesomeIcon icon={faScrewdriverWrench} /></h1>
             </div>
