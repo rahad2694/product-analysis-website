@@ -3,7 +3,6 @@ import ShowReview from '../ShowReview/ShowReview';
 
 const Review = () => {
     const [review , setReview] = useReviews();
-    // console.log(review);
     return (
         <div>
             <div>
