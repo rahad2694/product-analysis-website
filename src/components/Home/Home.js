@@ -6,7 +6,7 @@ import useReviews from '../../hooks/useReviews';
 import ShowReview from '../ShowReview/ShowReview';
 
 const Home = () => {
-    const [review, setReview] = useReviews();
+    const [review] = useReviews();
     return (
         <div>
             <div className='grid grid-cols-1  my-5 md:flex md:justify-between p-10'>
@@ -25,6 +25,7 @@ const Home = () => {
                     <img className='w-3/4 border-4 p-1 rounded-full' src="../../images/intro.jpg" alt="" />
                 </div>
             </div>
+            <h1 className='text-3xl font-bold my-5'>Customer Feedback</h1>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
                 {
                     review.slice(0, 3).map(item => <ShowReview key={item.id} item={item}></ShowReview>)
