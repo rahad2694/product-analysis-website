@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Earth",
+      "rating": "149.21 million km",
+      "image": "https://previews.123rf.com/images/rawpixel/rawpixel1612/rawpixel161239832/67631432-african-man-smiling-face-expression-concept.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mars",
+      "rating": "227.9 million km",
+      "OrbitalPeriod": "687 days",
+      "image": "https://thumbs.dreamstime.com/b/man-perfect-brilliant-smile-unshaven-face-defocused-background-guy-happy-emotional-expression-outdoors-bearded-man-124640934.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Jupiter",
+      "rating": "778.5 million km",
+      "image": "https://static2.bigstockphoto.com/6/6/2/large1500/266556037.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mercury",
+      "rating": "57.72 million km",
+      "image": "https://thumbs.dreamstime.com/b/portrait-attractive-cheerful-young-man-smiling-happy-face-human-expressions-emotions-model-beautiful-smile-blue-eyes-147751681.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Venus",
+      "rating": "108.2 million km",
+      "image": "https://envato-shoebox-0.imgix.net/7bc9/c82b-256f-464b-af89-6aec9d9b61f1/MAS_6984.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=358542f50ae65ac51d280441af6ea53f"
+    },
+    {
+      "id": 6,
+      "name": "Saturn",
+      "rating": "1.434 billion km",
+      "image": "https://ak.picdn.net/shutterstock/videos/1022373415/thumb/9.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Neptune",
+      "rating": "4.495 billion km",
+      "image": "https://static.vecteezy.com/system/resources/previews/002/702/880/large_2x/man-smiling-face-cartoon-free-vector.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Uranus",
+      "rating": "2.871 billion km",
+      "image": "https://media.istockphoto.com/photos/laughing-out-loud-joyful-young-man-in-casual-tshirt-smiles-broadly-picture-id1163192129?k=20&m=1163192129&s=612x612&w=0&h=6E3ex13dxxd-97Z7j7vXsiCZMnyYzHdxRk2DdAa76ak="
+    }
+  ]
