@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart,Tooltip, XAxis, YAxis } from 'recharts';
+import './Dashboard.css'
 
 const DashBoard = () => {
     const [data, setData] = useState([]);
@@ -9,11 +10,11 @@ const DashBoard = () => {
             .then(output => setData(output));
     }, []);
     return (
-        <div className='grid md:grid-cols-2 my-3'>
+        <div className='db-container grid md:grid-cols-2 my-3'>
             <div>
                 <p className='my-3 text-xl'>Monthly Revenue Analysis</p>
                 <div className='flex justify-center'>
-                    <LineChart width={350} height={250} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                    <LineChart className='line-chart' width={350} height={250} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                         <Line type="monotone" dataKey="revenue" stroke="#8884d8" />
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         <XAxis dataKey="month" />
@@ -25,7 +26,7 @@ const DashBoard = () => {
             <div>
                 <p className='my-3 text-xl'>Group Wise Sales value</p>
                 <div className='flex justify-center'>
-                    <PieChart width={300} height={300}>
+                    <PieChart className='pi-chart' width={300} height={300}>
                         <Pie
                             dataKey="sell"
                             isAnimationActive={false}
@@ -43,7 +44,7 @@ const DashBoard = () => {
             <div>
                 <p className='my-3 text-xl'>Group Wise Revenue value</p>
                 <div className='flex justify-center'>
-                    <AreaChart
+                    <AreaChart className='area-chart'
                         width={400}
                         height={300}
                         data={data}
@@ -65,7 +66,7 @@ const DashBoard = () => {
             <div>
                 <p className='my-3 text-xl'>Monthly Investment VS Revenue</p>
                 <div className='flex justify-center'>
-                    <BarChart
+                    <BarChart className='bar-chart'
                         width={400}
                         height={280}
                         data={data}
