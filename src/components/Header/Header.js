@@ -1,21 +1,32 @@
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faScrewdriverWrench, faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const [menu, setMenu] = useState(false);
+    const handleMenu = (res) => {
+        setMenu(res);
+    }
     return (
-        <div className='bg-orange-400 py-3 grid md:grid-cols-2 px-2 sticky top-0'>
-            <div className='flex md:justify-start justify-center mb-3 md:mb-0'>
+        <div className='bg-orange-400 py-3 grid grid-cols-2 px-2 sticky top-0'>
+            <div className='flex md:justify-start justify-center '>
                 <h1 className='text-3xl font-bold text-white cursor-pointer'>BD Cycle Repair <FontAwesomeIcon icon={faScrewdriverWrench} /></h1>
             </div>
-            <nav className='flex justify-evenly align-middle'>
-                <Link className='text-xl hover:text-white' to='/home'>Home</Link>
-                <Link className='text-xl hover:text-white' to='/reviews'>Reviews</Link>
-                <Link className='text-xl hover:text-white' to='/dashboard'>Dashboard</Link>
-                <Link className='text-xl hover:text-white' to='/blogs'>Blogs</Link>
-                <Link className='text-xl hover:text-white' to='/about'>About</Link>
-            </nav>
+            <div className='lg:flex lg:justify-end'>
+                <div className='flex justify-end'>
+                    <button className='lg:hidden text-3xl text-white' onClick={() => handleMenu(!menu)}>{menu ? <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> : <FontAwesomeIcon icon={faXmarkCircle}></FontAwesomeIcon>}</button>
+                </div>
+                <nav className= {`mt-8 md:mt-2 absolute right-px lg:block ${menu?'hidden':'static'}`}>
+                    <ul onClick={() => handleMenu(!menu)} className='lg:flex lg:justify-end align-middle my-6 lg:my-0'>
+                        <li className='my-3'><Link className='bg-orange-400 px-3 py-1 rounded-xl text-md hover:text-white' to='/home'>Home</Link></li>
+                        <li className='my-3'><Link className='bg-orange-400 px-3 py-1 rounded-xl text-md hover:text-white'  to='/reviews'>Reviews</Link></li>
+                        <li className='my-3'><Link className='bg-orange-400 px-3 py-1 rounded-xl text-md hover:text-white'  to='/dashboard'>Dashboard</Link></li>
+                        <li className='my-3'><Link className='bg-orange-400 px-3 py-1 rounded-xl text-md hover:text-white' to='/blogs'>Blogs</Link></li>
+                        <li className='my-3'><Link className='bg-orange-400 px-3 py-1 rounded-xl text-md hover:text-white'  to='/about'>About</Link></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     );
 };

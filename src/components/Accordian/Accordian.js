@@ -29,7 +29,7 @@ const Accordian = () => {
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body py-4 px-5">
-                            <strong>Context API</strong> enables us to pass data to a multi level child component without props drilling. In such way we are no longer required to expose data to every component in the tree. Rather we can directly access data in the multi level child component which was provided by the multi level parent component. First we need to use <code>createContext()</code> and <code>useContext()</code> to pass and receive the data we want. With this method we can pass any type of data or function to the targeted child component.
+                            <strong>Context API</strong> enables us to pass data to a multi level child component without props drilling. In such way we are no longer required to expose data to every component in the tree. Rather we can directly access data in the multi level child component which was provided by the multi level parent component. We need to use <code>createContext()</code> and <code>useContext()</code> to pass and receive the data we want. With this method we can pass any type of data or function to the targeted child component.
                         </div>
                     </div>
                 </div>
