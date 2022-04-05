@@ -29,12 +29,7 @@ const Accordian = () => {
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body py-4 px-5">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default,
-                            until the collapse plugin adds the appropriate classes that we use to style each
-                            element. These classes control the overall appearance, as well as the showing and
-                            hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                            our default variables. It's also worth noting that just about any HTML can go within
-                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Context API</strong> enables us to pass data to a multi level child component without props drilling. In such way we are no longer required to expose data to every component in the tree. Rather we can directly access data in the multi level child component which was provided by the multi level parent component. First we need to use <code>createContext()</code> and <code>useContext()</code> to pass and receive the data we want. With this method we can pass any type of data or function to the targeted child component.
                         </div>
                     </div>
                 </div>
@@ -63,12 +58,17 @@ const Accordian = () => {
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div className="accordion-body py-4 px-5">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                            until the collapse plugin adds the appropriate classes that we use to style each
-                            element. These classes control the overall appearance, as well as the showing and
-                            hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                            our default variables. It's also worth noting that just about any HTML can go within
-                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Semantic Tag</strong> is a type of HTML tag that is meaningful and understandable to both the browser and the developer. It provides additional information with the tag which aids in communication. Moreover, these Semantic tags are well communicated with the search engines which result in appearing it in the search queries. Example of Semantic tags are: {
+                                <ul className='text-green-500 font-bold border py-1 mt-2'>
+                                    <li><code>&lt;abbr&gt;</code></li>
+                                    <li><code>&lt;acronym&gt;</code></li>
+                                    <li><code>&lt;blockquote&gt;</code></li>
+                                    <li><code>&lt;address&gt;</code></li>
+                                    <li><code>&lt;cite&gt;</code></li>
+                                    <li><code>&lt;span&gt;</code></li>
+                                    <li><code>&lt;strong&gt;</code></li>
+                                </ul>
+                            }
                         </div>
                     </div>
                 </div>
