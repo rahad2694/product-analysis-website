@@ -10,4 +10,5 @@ Live Site Link- [Click Here](https://rahad-bd-cycle-repair.netlify.app/)
 * Rechart used
 * FontAwesome used
 * Tailwind CSS used
+* Tailwind Elements used
 * Destructuring used

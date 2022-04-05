@@ -1,9 +1,9 @@
-import React from 'react';
+import Modal from '../Modal/Modal';
 
 const Blogs = () => {
     return (
         <div>
-            I am Blogs
+            <Modal></Modal>
         </div>
     );
 };
