@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(true);
     const handleMenu = (res) => {
         setMenu(res);
     }
