@@ -67,8 +67,8 @@ const DashBoard = () => {
                 <p className='mt-3 mb-5 text-xl'>Monthly Investment VS Revenue</p>
                 <div className='flex justify-center'>
                     <BarChart className='bar-chart'
-                        width={400}
-                        height={280}
+                        width={350}
+                        height={240}
                         data={data}
                         margin={{
                             top: 5,
