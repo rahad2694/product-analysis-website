@@ -31,7 +31,7 @@ const Home = () => {
                     review.slice(0, 3).map(item => <ShowReview key={item.id} item={item}></ShowReview>)
                 }
             </div>
-            <div className='my-5'>
+            <div className='mt-8 mb-10'>
                 <Link className='bg-orange-400 py-2 px-5 rounded-xl hover:text-white my-5' to='/reviews'>See All</Link>
             </div>
         </div>
